@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,12 @@ import { Router } from '@angular/router';
 })
 export class HomePage {
 
-  constructor(private router: Router) {
-
+  constructor(
+    private router: Router,
+    public auth: AuthService
+  ) { 
+    console.log('user', auth.user);
+    console.log('userDoc', auth.userDoc);
   }
 
   openMenu(){

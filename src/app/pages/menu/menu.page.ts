@@ -12,6 +12,10 @@ export class MenuPage implements OnInit {
 
   pages = [
     {
+      title: 'Home',
+      url: '/home'
+    },
+    {
       title: 'Dashboard',
       url: '/menu/(my:dashboard)'
     },

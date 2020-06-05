@@ -1,1 +1,30 @@
+.sun,
+.signout,
+.google {
+    font-size: 1.2em;
+    margin-right: 2vw;
+}
 
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.login,
+.user {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Script', sans-serif;
+}
+
+.row-avatar {
+    margin: auto;
+
+    .avatar {
+        max-width: 100px !important;
+        max-height: 100px !important; 
+        display: block;
+        margin: auto;
+    }
+}

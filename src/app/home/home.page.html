@@ -1,13 +1,42 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="title">
       SunLife Innovations
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
-  <ion-button expand="full" href="menu/(my:dashboard)">Open Dashboard</ion-button>
+  <div *ngIf="auth.user as user; else login">
+    <ion-grid>
+      <ion-row class="row-avatar">
+        <ion-avatar class="avatar">
+          <img [src]="auth.user.photoURL">
+        </ion-avatar>
+      </ion-row>
+      <ion-row class="user">
+        <ion-label>Hello {{ auth.user.displayName || 'Mystery Person' }} !</ion-label>
+      </ion-row>
+      <ion-button expand="full" href="menu/(my:dashboard)" color="warning">
+        <i class="sun fas fa-sun"></i>
+        Open SunLife Dashboard
+      </ion-button>
+      <ion-button expand="full" color="danger" *ngIf="user" (click)="auth.signOut()">
+        <i class=" signout fas fa-sign-out-alt"></i> Signout
+      </ion-button>
+    </ion-grid>
+  </div>
+  
+  <ng-template #login>
+    <ion-row class="login">
+      <ion-label>Oops, login first!</ion-label>
+    </ion-row>
+    <span (click)="auth.googleLogin()">
+      <ion-button expand="full" color="primary">
+        <i class="google fab fa-google"></i> Login with Google
+      </ion-button>
+    </span>
+  </ng-template>
+  
 
 </ion-content>
