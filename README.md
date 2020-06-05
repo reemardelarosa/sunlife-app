@@ -4,10 +4,10 @@ Ionic 4
 ## Demo
 
 ### Dashboard Page
-![Dashboard](./demo/dashboard.jpg)
+![](https://raw.githubusercontent.com/reemardelarosa/sunlife-app/master/demo/dashboard.JPG)
 
 ### Policy Servicing
-![Policy Servicing](./demo/policy-servicing.jpg)
+![](https://raw.githubusercontent.com/reemardelarosa/sunlife-app/master/demo/policy-servicing.JPG)
 
 ### My Policies
-![Policies](./demo/my-policies.jpg)
+![](https://raw.githubusercontent.com/reemardelarosa/sunlife-app/master/demo/my-policies.JPG)
