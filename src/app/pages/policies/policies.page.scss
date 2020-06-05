@@ -1,0 +1,55 @@
+.policy-container {
+    ion-grid,
+    ion-card-header,
+    ion-card-content {
+        padding: 0;
+    }
+
+    .policy {
+        &.warning {
+            border: 2px solid var(--ion-color-warning);
+        }
+    }
+
+    ion-label {
+        font-size: .8em !important;
+    }
+
+    .currency {
+        text-align-last: end;
+        margin-right: 0;
+    }
+
+    .title,
+    .sc-ion-label-md-h .title {
+        font-size: 1.2em !important;
+        font-weight: 700;
+    }
+
+    .disclaimer {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .warning {
+        border: 2px solid var(--ion-color-warning);
+    
+        .warning-icon {
+            padding: 2vw 4vw;
+            font-size: 4vw;
+            border-right: 2px solid var(--ion-color-warning);
+        }
+    
+        .warning-text {
+            padding: 2vw;
+            font-size: .9em;
+        }
+    }
+
+
+    .disclaimer ion-note .icon {
+        margin-bottom: 4vh;
+        color: var(--ion-color-medium);
+    }
+
+}

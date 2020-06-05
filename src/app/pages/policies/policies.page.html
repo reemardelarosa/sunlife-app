@@ -1,0 +1,74 @@
+<ion-header no-border>
+  <app-toolbar title="My Policies"></app-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="policy-container">
+    <ion-card mode="ios" class="policy" *ngFor="let policy of policies;" [ngClass]="{warning: policy.warning}">
+      <section>
+        <ion-card-header class="header">
+          <ion-item class="ion-activated" lines="none">
+            <ion-label class="title"><b>{{ policy.title }}</b></ion-label>
+          </ion-item>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item href="#" mode="ios" lines="none">
+            <ion-grid slot="start">
+              <ion-row>
+                <ion-label>{{ labels.policyNo}}: {{ policy.policyNo}}</ion-label>
+              </ion-row>
+              <ion-row>
+                <ion-label>{{ labels.status}}: {{ policy.status}}</ion-label>
+              </ion-row>
+            </ion-grid>
+          </ion-item>
+          <ion-item  *ngIf="policy.sumAssured" class="pricing" mode="ios" lines="none">
+            <ion-label slot="start">{{ labels.sumAssured }}</ion-label>
+            <ion-label class="currency">{{shared.currency}} </ion-label>
+            <ion-label slot="end" [title]="policy.sumAssured">{{ policy.sumAssured }}</ion-label>
+          </ion-item>
+          <ion-item  *ngIf="policy.surrenderValue" class="pricing" mode="ios" lines="none">
+            <ion-label slot="start">{{ labels.surrenderValue }}</ion-label>
+            <ion-label class="currency">{{shared.currency}} </ion-label>
+            <ion-label slot="end" [title]="policy.surrenderValue">{{ policy.surrenderValue }}</ion-label>
+          </ion-item>
+          <ion-item  *ngIf="policy.cashValue" class="pricing" mode="ios" lines="none">
+            <ion-label slot="start">{{ labels.cashValue }}</ion-label>
+            <ion-label class="currency">{{shared.currency}} </ion-label>
+            <ion-label slot="end" [title]="policy.cashValue">{{ policy.cashValue }}</ion-label>
+          </ion-item>
+          <ion-item  *ngIf="policy.contributionAmount" class="pricing" mode="ios" lines="none">
+            <ion-label slot="start">{{ labels.contributionAmount }}</ion-label>
+            <ion-label class="currency">{{shared.currency}} </ion-label>
+            <ion-label slot="end" [title]="policy.contributionAmount">{{ policy.contributionAmount }}</ion-label>
+          </ion-item>
+          <ion-item  *ngIf="policy.fundBalance" class="pricing" mode="ios" lines="none">
+            <ion-label slot="start">{{ labels.fundBalance }}</ion-label>
+            <ion-label class="currency">{{shared.currency}} </ion-label>
+            <ion-label slot="end" [title]="policy.fundBalance">{{ policy.fundBalance }}</ion-label>
+          </ion-item>
+          <ion-item  *ngIf="policy.amountOfBenefit" class="pricing" mode="ios" lines="none">
+            <ion-label slot="start">{{ labels.amountOfBenefit }}</ion-label>
+            <ion-label class="currency">{{shared.currency}} </ion-label>
+            <ion-label slot="end" [title]="policy.amountOfBenefit">{{ policy.amountOfBenefit }}</ion-label>
+          </ion-item>
+          <ion-item  *ngIf="policy.mprc" class="pricing" mode="ios" lines="none">
+            <ion-label slot="start">{{ labels.mprc }}</ion-label>
+            <ion-label class="currency">{{shared.currency}} </ion-label>
+            <ion-label slot="end" [title]="policy.mprc">{{ policy.mprc }}</ion-label>
+          </ion-item>
+          <ion-item *ngIf="policy.warning">
+            <ion-label class="warning" [title]="policy.warning">
+              <i slot="start" class="warning-icon fas fa-exclamation"></i>
+              <b class="warning-text">{{ policy.warning }}</b>
+            </ion-label>
+          </ion-item>
+        </ion-card-content>
+      </section>
+    </ion-card>
+    <ion-row class="disclaimer">
+      <ion-note>{{ labels.disclaimer }}</ion-note>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

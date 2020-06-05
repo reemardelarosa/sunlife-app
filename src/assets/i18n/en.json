@@ -1,0 +1,151 @@
+{
+  "shared": {
+    "currency": "HKD"
+  },
+  "dashboard": {
+    "greeting": "Good Morning",
+    "name": "Chu Ying, Rebecca",
+    "funds": "Manage ILAS Funds",
+    "claims": "Claims",
+    "policy": "Policy Servicing",
+    "coverage-title": "Coverage from 4 Policies",
+    "coverage-note": "*Additional coverages detailed in provision",
+    "coverage-body" :{
+      "life": {
+        "icon": "../../../assets/icon/life.PNG",
+        "title": "Life",
+        "value": "HKD 6, 146, 066"
+      },
+      "critical": {
+        "icon": "../../../assets/icon/critical.PNG",
+        "title": "Critical Illness",
+        "value": "up to HKD 1, 000, 000*"
+      },
+      "medical": {
+        "icon": "../../../assets/icon/medical.PNG",
+        "title": "Medical & Hosp.",
+        "value": "up to: HKD 721, 800/year, HKD 600, 000/disability"
+      },
+      "accident": {
+        "icon": "../../../assets/icon/accident.PNG",
+        "title": "Accident",
+        "value": "up to HKD 1, 000, 000*"
+      }
+    },
+    "assets": {
+      "title": "Assets",
+      "total": {
+        "text": "Total",
+        "amount": "255,309"
+      },
+      "investment": {
+        "text": "Investment-Linked",
+        "amount": "10,539"
+      },
+      "savings": {
+        "text": "Savings",
+        "amount": "161,688"
+      }
+    }
+  },
+  "policy-services": [
+    {
+      "title": "Move value from one policy to another",
+      "icon": "icon fas fa-paste",
+      "services": [
+        {
+          "title": "Pay with Policy Value",
+          "link": ""
+        },
+        {
+          "title": "Standing Instructions",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Cash out your policy values",
+      "icon": "icon fas fa-comments-dollar",
+      "services": [
+        {
+          "title": "Value Withdrawal",
+          "link": ""
+        },
+        {
+          "title": "Payout Method",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Take a loan against your policy value",
+      "icon": "icon fas fa-file-invoice-dollar",
+      "services": [
+        {
+          "title": "Loans",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Payment options for your premiums",
+      "icon": "icon fas fa-money-check-alt",
+      "services": [
+        {
+          "title": "Premium Payment Menthod",
+          "link": ""
+        }
+      ]
+    }
+  ],
+  "my-policies": {
+    "labels": {
+      "policyNo": "Policy No",
+      "status": "Status",
+      "sumAssured": "Sum Assured",
+      "surrenderValue": "Surrender Value*",
+      "cashValue": "Cash Value*",
+      "contributionAmount": "Contribution Amount",
+      "fundBalance": "Fund Balance*",
+      "amountOfBenefit": "Amount of Benefit",
+      "mprc": "Modal Premium / Regular Contribution including Levy",
+      "disclaimer": "*excluding pending fund transactions"
+    },
+    "policies": [
+      {
+        "title": "LifeSuper 20",
+        "policyNo": "601007042",
+        "status": "Inforce",
+        "sumAssured": "5,900,000",
+        "surrenderValue": "240,770",
+        "mprc": "3,441.00",
+        "warning": "Premium of HKD 1,280.90 due in 3 days."
+      },
+      {
+        "title": "Sun Architect",
+        "policyNo": "201491780",
+        "status": "Inforce",
+        "contributionAmount": "11,066",
+        "fundBalance": "10,539",
+        "surrenderValue": "7,337",
+        "mprc": "3,441.00"
+      },
+      {
+        "title": "Critical Medical Care Plan II",
+        "policyNo": "048267442",
+        "status": "Inforce",
+        "amountOfBenefit": "500,000",
+        "mprc": "3,441.00"
+      },
+      {
+        "title": "SunEducator 5",
+        "policyNo": "60158495",
+        "status": "Inforce",
+        "amountOfBenefit": "25,000",
+        "cashValue": "2,046",
+        "surrenderValue": "2,251",
+        "mprc": "3,441.00"
+      }
+    ]
+  }
+}

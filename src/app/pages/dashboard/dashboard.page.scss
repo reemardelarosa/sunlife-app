@@ -1,0 +1,192 @@
+.row-avatar {
+    margin: auto;
+
+    .avatar {
+        max-width: 50px !important;
+        max-height: 50px !important; 
+        display: block;
+        margin: auto;
+        margin-top: -8%;
+    }
+}
+
+ion-content {
+    --background: url('/assets/images/dashboard.jpg') no-repeat 39% -80% 181% scroll;
+    
+}
+
+
+:host() {
+    background-image: url('/assets/images/dashboard.jpg');
+    background-position: 39% -80%;
+    background-repeat: no-repeat;
+    background-size: 181%;
+    background-attachment: scroll;
+    overflow: unset;
+}
+
+.name,
+.tabs,
+.coverage-title,
+.coverage-item ion-row,
+.coverage-note,
+.up-button,
+.funds ion-row,
+.claims ion-row,
+.policy ion-row,
+.claims-container ion-row,
+.funds-container ion-row,
+.greeting {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.greeting {
+    font-family: 'Script', sans-serif;
+}
+
+.name {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.greeting ion-text,
+.name ion-text {
+    color: var(--ion-color-primary-contrast);
+    text-shadow: 2px 2px var(--ion-color-light-contrast);
+}
+
+.tabs {
+    margin-top: 12vw;
+
+    i {
+        font-size: 1.5em;
+    }
+
+    .label {
+        margin-top: 1vw;
+        font-size: 0.8em;
+    }
+
+    .claims {
+        margin-top: 10vw;
+    }
+
+    a {
+        color: var(--link-color);
+    }
+
+    a:hover {
+        color: var(--link-color-hover);
+    }
+
+}
+
+.coverage-container {
+    padding: 0;
+
+    .coverage-title ion-item {
+        margin-top: 12vw;
+        font-size: 1.5em;
+        font-weight: 300;
+    
+        .label {
+            margin-right: 1vw;
+        }
+    }
+    
+    .coverage-body {
+        img {
+            width: 50%;
+        }
+    
+        .title {
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 1vh;
+        }
+    
+        .value {
+            font-size: .9em;
+        }
+    
+        .coverage-note ion-note {
+            font-size: .6em;
+            margin-top: 4vh;
+            margin-bottom: 2vh;
+        }
+    }
+    
+    .assets {
+        margin: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    
+        ion-card-header {
+            --padding-top: 0;
+            --padding-start: 0;
+            --padding-end: 0;
+            --padding-bottom: 0;
+            --ion-safe-area-left: 0;
+        }
+    
+        .title {
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+    
+        .item {
+            font-size: 1em
+        }
+    
+        .value {
+            text-align-last: end;
+        }
+    
+        .card-content-md {
+            padding: 0 !important;
+        }
+    }
+
+}
+
+.policy-container {
+    padding: 0;
+
+    .policies {
+        margin: 4vh 0 0;;
+        background: white;
+        box-shadow: none;
+
+        .header {
+            padding: 0;
+
+            .icon {
+                font-size: 1.2em;
+                color: var(--ion-color-warning-shade);
+                margin-right: 3vw;
+            }
+
+            .title {
+                color: var(--ion-color-medium);
+            }
+        }
+
+        .service {
+            margin-left: 3vw;
+        }
+        
+    }
+
+    .up-button {
+        --box-shadow: none;
+        margin-bottom: 1vh;
+    }
+}
+
+.claims-container,
+.funds-container {
+    margin-top: 8vh;
+    font-weight: 900;
+}

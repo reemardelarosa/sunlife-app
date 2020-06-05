@@ -1,0 +1,16 @@
+ion-title {
+    font-family: 'Script', sans-serif;
+}
+
+.active-item {
+    border-left: 8px solid var(--ion-color-warning-shade);
+}
+
+:host() {
+    background-image: url('/assets/images/dashboard.jpg');
+    background-position: 39% -80%;
+    background-repeat: no-repeat;
+    background-size: 181%;
+    background-attachment: scroll;
+    overflow-y: auto
+}

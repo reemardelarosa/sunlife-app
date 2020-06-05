@@ -1,0 +1,13 @@
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+ion-menu-button,
+ion-icon {
+    color: var(--ion-color-primary-contrast);
+}
+
+ion-title {
+    color: var(--ion-color-primary-contrast);
+}
