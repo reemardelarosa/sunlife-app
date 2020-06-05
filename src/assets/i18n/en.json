@@ -98,6 +98,12 @@
       ]
     }
   ],
+  "funds": {
+    "title": "Funds Page"
+  },
+  "claims": {
+    "title": "Claims Page"
+  },
   "my-policies": {
     "labels": {
       "policyNo": "Policy No",
